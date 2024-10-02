@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            color: white;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome, <span th:text="${username}">User</span>!</h1>
+    <h1>Now you are an Massive Gym Member </h1>
+    <h2>Advantages of Going to the Gym</h2>
+    <p>Regular gym attendance can offer numerous benefits, including:</p>
+    <ul>
+        <li><strong>Improved Physical Health:</strong> Regular exercise strengthens the heart, improves circulation, and reduces the risk of chronic diseases.</li>
+        <li><strong>Weight Management:</strong> A consistent workout routine helps in maintaining a healthy weight or losing excess weight.</li>
+        <li><strong>Increased Strength and Endurance:</strong> Weight training and resistance exercises increase muscle strength and endurance over time.</li>
+        <li><strong>Enhanced Mental Health:</strong> Exercise is known to reduce symptoms of anxiety and depression, improving overall mental well-being.</li>
+        <li><strong>Social Interaction:</strong> Going to the gym provides opportunities to meet new people and build a supportive community.</li>
+        <li><strong>Improved Sleep:</strong> Regular physical activity can help you fall asleep faster and deepen your sleep.</li>
+        <li><strong>Boosted Confidence:</strong> Achieving fitness goals can lead to increased self-esteem and confidence in your body.</li>
+    </ul>
+    <a th:href="@{/index}">Go to Home</a>
+</div>
+
+</body>
+</html>
